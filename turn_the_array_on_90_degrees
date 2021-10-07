@@ -1,0 +1,12 @@
+import random
+n, m = 7, 9
+a = [[random.randint(10,50) for j in range(m)] for i in range(n)]
+b = [[random.randint(10,50) for j in range(n)] for i in range(m)]
+for i in range(len(a)):
+    print(a[i])
+for i in range(n):
+    for j in range(m):
+        b[j][n-(i+1)] = a[i][j]
+print("------------")
+for i in range(len(b)):
+    print(b[i])
